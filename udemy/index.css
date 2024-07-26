@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+
+.burger,.search-bar {
+    display: none;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.08);
+    white-space: nowrap;
+    min-width: 200px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 10000;
+}
+
+nav div {
+    margin: 0 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    opacity: 0.89;
+}
+
+a:hover {
+    color: #5022c3;
+}
+
+.nav-searchbar {
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-grow: 1;
+}
+
+.nav-searchbar input {
+    border: none;
+    margin: 0 20px;
+    outline: none;
+    width: 100%;
+}
+
+input::placeholder {
+font-size: 15px;
+}
+
+.cart {
+    cursor: pointer;
+}
+
+.search2 {
+    display: none   ;
+}
+.login-btn button,.signup-btn button {
+    width: 70px;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #2d2f31;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.signup-btn button {
+    background-color: #2d2f31;
+    color: white;
+}
+
+.login-btn button:hover,.signup-btn button:hover {
+    background-color: rgba(185, 177, 177, 0.938);
+    border: 1px solid rgba(185, 177, 177, 0.938);;
+}
+
+.global {
+    cursor: pointer;
+    border: 1px solid #2d2f31;
+    padding: 5px;
+}
+
+.search {
+    cursor: not-allowed;
+}
+
+@media (max-width:1080px) {
+    .udemyBussiness {
+        display: none;
+    }
+}
+
+@media (max-width:920px) {
+    .teachOnUdemy {
+        display: none;
+    }
+}
+
+@media (max-width:800px) {
+    .categories,.login-btn,.signup-btn,.nav-searchbar,.global{
+        display: none;
+    }
+
+    .search2 {
+        display: inline-block;
+    }
+
+    .burger {
+        display: inline-block;
+
+    }
+
+    .logo {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* top of the page */
+
+.brief img {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 60px;
+    z-index: -1;
+    min-width: 100%;
+}
+
+.brief .text {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .08);
+    width: 35rem;
+    padding: 40px;
+    top: 20%;
+    left: 10%;
+}
+
+.brief .text h3 {
+    font-weight: 600;
+    font-size: 45px;
+     margin-bottom: 10px;
+}
+
+.brief .text p {
+    font-size: larger;
+    font-weight: 500;
+}
+
+.authentic-companies {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f9;
+    padding: 40px;
+    width: 100%;
+}
+
+.authentic-companies h4 {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(161, 156, 156);
+}
+
+.companies-logos {
+    margin-top: 30px;
+}
+
+.companies-logos img {
+    margin: 20px 50px;
+}
+
+@media (max-width:1340px) {
+    .brief img {
+        width: 100%;
+    }
+}
+
+@media (max-width:700px) {
+
+    .brief {
+        margin-top: 70px;
+    }
+
+    .brief img {
+        width: 100%;
+    }
+
+    .brief .text {
+        display:block;
+        position: static;
+        width: 100vw;
+    }
+
+    .brief .text h3 {
+        width: 100%;
+    }
+
+    .brief .text p {
+        width: 100%;
+    }
+
+    .search-bar {
+        border: 1px solid black;
+        padding: 15px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-grow: 1;
+        margin-top: 20px;
+    }
+
+    .search-bar input {
+        border: none;
+        margin: 0 20px;
+        outline: none;
+        width: 100%;
+    }
+
+}
+
+@media (max-width:700px) {
+    .authentic-companies {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width:750px) {
+    .companies-logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .companies-logos img {
+        width:40px;
+        margin: 0 13px;
+    }
+
+    .authentic-companies h4 {
+        font-size: 15px;
+    }
+}
